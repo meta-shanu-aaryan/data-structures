@@ -16,4 +16,24 @@ public class Node {
     public Node getNext() {
         return next;
     }
+
+    public boolean setValue(int num) {
+        try {
+            this.value = num;
+            return true;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return false;
+        }
+    }
+
+    public boolean setNext(Node node) {
+        try {
+            this.next = node;
+            return true;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return false;
+        }
+    }
 }
