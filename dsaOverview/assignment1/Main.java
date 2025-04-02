@@ -120,8 +120,8 @@ public class Main {
                 }
 
             } catch (Exception e) {
-                throw e;
-                // System.out.println(e.getMessage());
+                // throw e;
+                System.out.println(e.getMessage());
             }
 
         }
