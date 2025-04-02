@@ -1,7 +1,6 @@
 package StackQueueHashing.assignment3;
 
 import java.util.HashMap;
-import java.util.List;
 
 import StackQueueHashing.assignment2.Squeue;
 

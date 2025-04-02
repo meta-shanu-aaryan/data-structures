@@ -5,14 +5,13 @@ import java.util.Scanner;
 
 import StackQueueHashing.assignment1.InfixCalculator;
 import StackQueueHashing.assignment2.Squeue;
-import StackQueueHashing.assignment3.Course;
-import StackQueueHashing.assignment3.Student;
 
 public class Main {
 
     static int scannerInt() {
         int n;
         while (true) {
+            @SuppressWarnings("resource")
             Scanner sc = new Scanner(System.in);
             try {
                 n = sc.nextInt();
@@ -27,6 +26,7 @@ public class Main {
     static String stringScanner() {
         String s;
         while (true) {
+            @SuppressWarnings("resource")
             Scanner sc = new Scanner(System.in);
             try {
                 s = sc.nextLine();
