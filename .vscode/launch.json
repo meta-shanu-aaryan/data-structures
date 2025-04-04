@@ -1,0 +1,63 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "TreesAndGraphs.Assignment3.Main",
+      "projectName": "data-structures-and-algorithms_117c78ba"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "TreesAndGraphs.Assignment2.Main",
+      "projectName": "data-structures-and-algorithms_117c78ba"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "StackQueueHashing.Main",
+      "projectName": "data-structures-and-algorithms_117c78ba"
+    },
+    {
+      "type": "java",
+      "name": "Main(1)",
+      "request": "launch",
+      "mainClass": "StackQueueHashing.assignment3.Main",
+      "projectName": "data-structures-and-algorithms_117c78ba"
+    },
+    {
+      "type": "java",
+      "name": "CommandPrompt",
+      "request": "launch",
+      "mainClass": "TreesAndGraphs.Assignment1.CommandPrompt",
+      "projectName": "data-structures-and-algorithms_117c78ba"
+    },
+    {
+      "type": "java",
+      "name": "Main(2)",
+      "request": "launch",
+      "mainClass": "dsaOverview.assignment1.Main",
+      "projectName": "data-structures-and-algorithms_117c78ba"
+    },
+    {
+      "type": "java",
+      "name": "Main2",
+      "request": "launch",
+      "mainClass": "dsaOverview.assignment1.Main2",
+      "projectName": "data-structures-and-algorithms_117c78ba"
+    }
+  ]
+}
