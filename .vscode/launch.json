@@ -8,6 +8,27 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
+      "mainClass": "ObjectsAndCollections.Assignment2.Main",
+      "projectName": "data-structures-and-algorithms_117c78ba"
+    },
+    {
+      "type": "java",
+      "name": "EmployeeCollectionAs2",
+      "request": "launch",
+      "mainClass": "ObjectsAndCollections.Assignment1.EmployeeCollectionAs2",
+      "projectName": "data-structures-and-algorithms_117c78ba"
+    },
+    {
+      "type": "java",
+      "name": "EmployeeSet",
+      "request": "launch",
+      "mainClass": "ObjectsAndCollections.Assignment1.EmployeeSet",
+      "projectName": "data-structures-and-algorithms_117c78ba"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
       "mainClass": "TreesAndGraphs.Assignment3.Main",
       "projectName": "data-structures-and-algorithms_117c78ba"
     },
