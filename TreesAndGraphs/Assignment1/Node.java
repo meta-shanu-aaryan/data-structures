@@ -12,6 +12,11 @@ public class Node<T> {
     private String date;
     private String time;
 
+    /**
+     * Gets the data of the node contains
+     * 
+     * @return data of generic type / the type it has
+     */
     public T getData() {
         return data;
     }
@@ -25,6 +30,11 @@ public class Node<T> {
         return parent;
     }
 
+    /**
+     * Gets the list of Children node of the node it is called with
+     * 
+     * @return List of Nodes that are children
+     */
     public List<Node<T>> getChildren() {
         return children;
     }
@@ -33,10 +43,20 @@ public class Node<T> {
         this.data = data;
     }
 
+    /**
+     * Gets the time when the node was created
+     * 
+     * @return String time in HH:MM:SS format
+     */
     public String getTIme() {
         return this.time;
     }
 
+    /**
+     * Gets the date when the node was created
+     * 
+     * @return String date in YYYY-MM-DD format
+     */
     public String getDate() {
         return this.date;
     }
@@ -60,6 +80,12 @@ public class Node<T> {
         this.time = LocalTime.now().toString().substring(0, 8);
     }
 
+    /**
+     * Takes the node and add it to the list of node it is called with that is tree
+     * 
+     * @param childNode node to add
+     * @return true if added successfully
+     */
     public boolean addNode(Node<T> childNode) {
         return this.children.add(childNode);
     }

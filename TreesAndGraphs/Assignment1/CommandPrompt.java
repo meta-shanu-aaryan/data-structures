@@ -21,6 +21,14 @@ public class CommandPrompt {
         return s;
     }
 
+    /**
+     * Finds the directory recursively
+     * 
+     * @param s  String s to find
+     * @param n  node n in which to find
+     * @param st an empty stack initialized
+     * @return
+     */
     public Stack<Node<String>> findDirectory(String s, Node<String> n, Stack<Node<String>> st) {
         if (n.getData().equals(s)) {
             return st;
@@ -37,6 +45,12 @@ public class CommandPrompt {
         return st;
     }
 
+    /**
+     * Prints tree using recursion
+     * 
+     * @param nod    the node from which the tree is to print
+     * @param prefix takes a blank string "" for initialization
+     */
     public void printTree(Node<String> nod, String prefix) {
         if (nod == null) {
             return;
@@ -45,7 +59,7 @@ public class CommandPrompt {
         System.out.println(prefix + "\u2514\u2500\u2500\u2500" + nod.getData());
 
         for (Node<String> n : nod.getChildren()) {
-            printTree(n, (prefix + "    "));
+            printTree(n, (prefix + "|    "));
         }
     }
 
@@ -72,10 +86,17 @@ public class CommandPrompt {
             String[] s = choice.split(" ");
             switch (s[0]) {
                 case "mkdir":
-                    if (cp.findDirectory(s[1], currentDirectory, new Stack<>()).empty()) {
+                    boolean flag2 = false;
+                    for (Node<String> node : currentDirectory.getChildren()) {
+                        if (node.getData().equals(s[1])) {
+                            flag2 = true;
+                            break;
+                        }
+                    }
+                    if (!flag2) {
                         currentDirectory.addNode(new Node<String>(s[1], currentDirectory));
                     } else {
-                        System.out.println("Directory already exist");
+                        System.out.println("Directory with this name already exist");
                     }
                     break;
                 case "cd":
@@ -101,7 +122,7 @@ public class CommandPrompt {
                     }
                     break;
                 case "find":
-                    System.out.println(".\\");
+                    System.out.print(".\\");
                     String sm = "";
                     Stack<Node<String>> result = cp.findDirectory(s[1], currentDirectory, new Stack<>());
                     while (!result.empty()) {

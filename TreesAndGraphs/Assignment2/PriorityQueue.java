@@ -4,10 +4,19 @@ public class PriorityQueue {
     private TValue[] queue;
     private int max = 0;
 
+    // contructor
     public PriorityQueue(int size) {
         queue = new TValue[size];
     }
 
+    /**
+     * Inserts element to the priorit queue
+     * 
+     * @param name  string name whatever name you want
+     * @param value int n on the basis it is prioritize
+     * @return true if inserted successfully
+     * @throws AssertionError when queue is full
+     */
     public boolean insert(String name, int value) {
         if (isFull()) {
             throw new AssertionError("queue overflowed, can not insert anything");
@@ -32,6 +41,13 @@ public class PriorityQueue {
         }
     }
 
+    /**
+     * Inserts element to the priorit queue
+     * 
+     * @param value int n on the basis it is prioritize
+     * @return true if inserted successfully
+     * @throws AssertionError when queue is full
+     */
     public boolean insert(int value) {
         if (isFull()) {
             throw new AssertionError("queue overflowed, can not insert anything");
@@ -59,6 +75,12 @@ public class PriorityQueue {
 
     }
 
+    /**
+     * Removes element from the queue
+     * 
+     * @return true if removed successfully
+     * @throws AssertionError if the queue is already empty
+     */
     public TValue remove() {
         if (isEmpty()) {
             throw new AssertionError("Queue is empty, can't remove anything");
@@ -71,6 +93,11 @@ public class PriorityQueue {
         return returnable;
     }
 
+    /**
+     * Shows if a priority queue is empty or not
+     * 
+     * @return true if its epmty else false
+     */
     public boolean isEmpty() {
         return (max == 0);
     }

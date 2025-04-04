@@ -15,6 +15,11 @@ public class Tree<T> {
         root = new Node<T>(data, null);
     }
 
+    /**
+     * Gets the root node of the tree
+     * 
+     * @return root node
+     */
     public Node<T> getRoot() {
         return root;
     }
