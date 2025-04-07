@@ -114,6 +114,7 @@ public class CommandPrompt {
                     }
                     break;
                 case "bk":
+                    
                     currentDirectory = dirStorage.remove(dirStorage.size() - 1).getParent();
                     break;
                 case "ls":
@@ -122,13 +123,17 @@ public class CommandPrompt {
                     }
                     break;
                 case "find":
-                    System.out.print(".\\");
-                    String sm = "";
                     Stack<Node<String>> result = cp.findDirectory(s[1], currentDirectory, new Stack<>());
-                    while (!result.empty()) {
-                        sm = result.pop().getData() + "\\" + sm;
+                    if (!result.empty()) {
+                        System.out.print(".\\");
+                        String sm = "";
+                        while (!result.empty()) {
+                            sm = result.pop().getData() + "\\" + sm;
+                        }
+                        System.out.println(sm);
+                    } else {
+                        System.out.println("Directory not found");
                     }
-                    System.out.println(sm);
                     break;
                 case "tree":
                     cp.printTree(rootDirectory.getRoot(), "");
