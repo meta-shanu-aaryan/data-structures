@@ -75,7 +75,8 @@ public class Main {
             pq.insert(bowler.getName(), bowler.getData() - 1);
             viratBowls--;
         }
+        System.out.println();
 
-        System.out.println("Here is the strategy, but you know kisng is the king.");
+        System.out.println("Here is the strategy, but you know king is the king.");
     }
 }

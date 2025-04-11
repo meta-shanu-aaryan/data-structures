@@ -8,6 +8,34 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
+      "mainClass": "AlgorithmanalysisAndDesign1.assignment2.Main",
+      "projectName": "data-structures-and-algorithms_117c78ba"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "ass4.src.main.java.com.metacube.shanu.App",
+      "projectName": "data-structures-and-algorithms_117c78ba"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "com.metacube.shanu.App",
+      "projectName": "ass4"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "AlgorithmanalysisAndDesign1.assignment1.Main",
+      "projectName": "data-structures-and-algorithms_117c78ba"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
       "mainClass": "ObjectsAndCollections.Assignment3.Main",
       "projectName": "data-structures-and-algorithms_117c78ba"
     },
