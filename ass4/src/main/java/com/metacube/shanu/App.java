@@ -22,5 +22,7 @@ public class App {
         for (Node<String, String> nod : mydict.sortedList()) {
             System.out.println(nod.key + " : " + nod.value);
         }
+
+        System.out.println(mydict.delete("Whyanu"));
     }
 }
